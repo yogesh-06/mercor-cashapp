@@ -1,7 +1,9 @@
-import Hero from "./sections/Hero";
 import "./App.css";
-import Payment from "./sections/Payment";
 import ThemeConfig from "./theme";
+import Hero from "./sections/Hero";
+import Payment from "./sections/Payment";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <>

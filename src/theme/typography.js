@@ -18,7 +18,7 @@ function responsiveFontSizes({ sm, md, lg }) {
   };
 }
 
-const FONT_PRIMARY = "agrandir";
+const FONT_PRIMARY = "AgrandirHeavy";
 
 const typography = {
   fontFamily: FONT_PRIMARY,
@@ -68,12 +68,13 @@ const typography = {
   },
   subtitle2: {
     fontWeight: 600,
-    lineHeight: 22 / 14,
-    fontSize: pxToRem(14),
+    lineHeight: 12 / 14,
+    fontSize: pxToRem(12),
   },
   body1: {
+    fontWeight: 800,
     lineHeight: 1.5,
-    fontSize: pxToRem(18),
+    fontSize: pxToRem(9),
   },
   body2: {
     lineHeight: 22 / 14,

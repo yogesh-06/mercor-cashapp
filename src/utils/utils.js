@@ -6,7 +6,6 @@ export function Title({ title, style }) {
     <Typography
       sx={{
         ...style,
-        // fontFamily: "Agrandir",
         fontWeight: 800,
         fontSize: 40,
         lineHeight: 40,

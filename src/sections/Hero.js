@@ -1,14 +1,13 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import { Title } from "../utils/utils";
+import IntroCube from "../assets/images/intro-cube 1.png";
+import IntroCubes from "../assets/images/intro-cubes 1.png";
+import Phone from "../assets/images/intro-phone.png";
+import IntroPillar from "../assets/images/intro-pillar 1.png";
+import IntroStairs from "../assets/images/intro-stairs 1.png";
 import Navbar from "../components/Navbar";
-import Phone from "../assets/intro-phone.png";
-import EyeButton from "../assets/eye-button.png";
-import IntroCube from "../assets/intro-cube 1.png";
-import IntroCubes from "../assets/intro-cubes 1.png";
-import IntroPillar from "../assets/intro-pillar 1.png";
-import IntroStairs from "../assets/intro-stairs 1.png";
 
 import { makeStyles } from "@mui/styles";
+import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   introPhone: {
@@ -19,11 +18,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-const containerStyle = {
-  position: "absolute",
-  // display: "flex",
-  // justifyContent: "space-between",
-};
+// const containerStyle = {
+//   position: "absolute",
+//   // display: "flex",
+//   // justifyContent: "space-between",
+// };
 export default function Hero() {
   const classes = useStyles();
 
@@ -39,16 +38,16 @@ export default function Hero() {
           // objectFit: "contain",
         }}
       ></Box>
-
+      {/* <Grid paddingX={300}> */}
       <Navbar />
+      {/* </Grid> */}
       <Container sx={{ position: "relative", padding: 0 }}>
-        {/* <Grid minHeight="100vh" position="absolute"> */}
         <Grid
           container
           position="absolute"
           top={80}
-          left={120}
-          maxWidth="85%"
+          left={90}
+          maxWidth="90%"
           justifyContent="space-between"
         >
           <Grid item>
@@ -58,6 +57,7 @@ export default function Hero() {
             <Box component="img" src={IntroStairs}></Box>
           </Grid>
         </Grid>
+
         <Grid
           display="flex"
           flexDirection="column"
@@ -75,10 +75,11 @@ export default function Hero() {
           </Typography>
           <Box style={{ position: "absolute", top: 0, left: 0 }}></Box>
         </Grid>
+
         <Grid
           container
           position="absolute"
-          top={485}
+          top={480}
           left={120}
           maxWidth="77%"
           alignItems="center"
@@ -91,8 +92,10 @@ export default function Hero() {
             <Box component="img" src={IntroPillar}></Box>
           </Grid>
         </Grid>
-        {/* </Grid> */}
       </Container>
+      <Grid paddingX={19} position="relative" top={-155}>
+        <Footer />
+      </Grid>
     </Box>
   );
 }

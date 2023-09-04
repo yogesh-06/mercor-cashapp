@@ -3,3 +3,12 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 }
+
+@font-face {
+	font-family: 'AgrandirHeavy';
+	src: url('./assets/fonts/Agrandir-GrandHeavy.otf');
+  }
+@font-face {
+	font-family: 'AgrandirLight';
+	src: url('./assets/fonts/Agrandir-GrandLight.otf');
+  }
