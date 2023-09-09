@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography, styled } from "@mui/material";
 import IntroCube from "../assets/images/intro-cube 1.png";
 import IntroCubes from "../assets/images/intro-cubes 1.png";
 import Phone from "../assets/images/intro-phone.png";
@@ -8,6 +8,7 @@ import Navbar from "../components/Navbar";
 
 import { makeStyles } from "@mui/styles";
 import Footer from "../components/Footer";
+import { RootStyle } from "../components/RootStyle";
 
 const useStyles = makeStyles((theme) => ({
   introPhone: {
@@ -17,44 +18,70 @@ const useStyles = makeStyles((theme) => ({
       width: 200,
     },
   },
+
+  backgroundSpark: {
+    width: "100%",
+    height: "100%",
+    position: "absolute",
+    // objectFit: "contain",
+    pointerEvents: "none",
+  },
+
+  cubeNstairs: {
+    position: "absolute",
+    top: "10%",
+    left: "10%",
+    maxWidth: "85%",
+    justifyContent: "space-between",
+    [theme.breakpoints.down("md")]: {
+      top: 110,
+      left: 70,
+      maxWidth: "50%",
+    },
+  },
+
+  cubesNpillar: {
+    position: "absolute",
+    top: "58%",
+    left: "11%",
+    maxWidth: "75%",
+    justifyContent: "space-between",
+    [theme.breakpoints.down("md")]: {
+      display: "none",
+    },
+  },
 }));
-// const containerStyle = {
-//   position: "absolute",
-//   // display: "flex",
-//   // justifyContent: "space-between",
-// };
+
 export default function Hero() {
   const classes = useStyles();
 
   return (
-    <Box sx={{ backgroundColor: "#000000", height: "100vh" }}>
+    <RootStyle color="#000000">
       <Box
         component="img"
         src="/static/Vector.png"
-        sx={{
-          width: "100%",
-          height: "100%",
-          position: "absolute",
-          // objectFit: "contain",
-        }}
-      ></Box>
-      {/* <Grid paddingX={300}> */}
+        className={classes.backgroundSpark}
+      />
       <Navbar />
-      {/* </Grid> */}
-      <Container sx={{ position: "relative", padding: 0 }}>
-        <Grid
-          container
-          position="absolute"
-          top={80}
-          left={90}
-          maxWidth="90%"
-          justifyContent="space-between"
-        >
+
+      <Container
+        sx={{
+          position: "relative",
+          top: -95,
+          padding: 0,
+          pointerEvents: "none",
+        }}
+      >
+        <Grid container className={classes.cubeNstairs}>
           <Grid item>
-            <Box component="img" src={IntroCube}></Box>
+            <Box component="img" src={IntroCube} />
           </Grid>
           <Grid item>
-            <Box component="img" src={IntroStairs}></Box>
+            <Box
+              component="img"
+              src={IntroStairs}
+              sx={{ display: { xs: "none", md: "block" } }}
+            />
           </Grid>
         </Grid>
 
@@ -73,18 +100,10 @@ export default function Hero() {
           <Typography variant="h1" sx={{ color: "white", zIndex: 100 }}>
             APP
           </Typography>
-          <Box style={{ position: "absolute", top: 0, left: 0 }}></Box>
+          {/* <Box style={{ position: "absolute", top: 0, left: 0 }}></Box> */}
         </Grid>
 
-        <Grid
-          container
-          position="absolute"
-          top={480}
-          left={120}
-          maxWidth="77%"
-          alignItems="center"
-          justifyContent="space-between"
-        >
+        <Grid container className={classes.cubesNpillar}>
           <Grid item>
             <Box component="img" src={IntroCubes}></Box>
           </Grid>
@@ -93,9 +112,15 @@ export default function Hero() {
           </Grid>
         </Grid>
       </Container>
-      <Grid paddingX={19} position="relative" top={-155}>
+      <Grid
+        sx={{
+          px: { xs: 1, md: 12 },
+          position: "relative",
+          top: { xs: "-42%", md: "-35%" },
+        }}
+      >
         <Footer />
       </Grid>
-    </Box>
+    </RootStyle>
   );
 }
