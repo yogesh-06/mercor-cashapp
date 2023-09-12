@@ -1,12 +1,13 @@
 import { Box, Container, Grid, Typography, styled } from "@mui/material";
+import { makeStyles } from "@mui/styles";
+
+import Phone from "../assets/images/intro-phone.png";
 import IntroCube from "../assets/images/intro-cube 1.png";
 import IntroCubes from "../assets/images/intro-cubes 1.png";
-import Phone from "../assets/images/intro-phone.png";
 import IntroPillar from "../assets/images/intro-pillar 1.png";
 import IntroStairs from "../assets/images/intro-stairs 1.png";
-import Navbar from "../components/Navbar";
 
-import { makeStyles } from "@mui/styles";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { RootStyle } from "../components/RootStyle";
 
@@ -23,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "100%",
     position: "absolute",
-    // objectFit: "contain",
     pointerEvents: "none",
   },
 
@@ -100,7 +100,6 @@ export default function Hero() {
           <Typography variant="h1" sx={{ color: "white", zIndex: 100 }}>
             APP
           </Typography>
-          {/* <Box style={{ position: "absolute", top: 0, left: 0 }}></Box> */}
         </Grid>
 
         <Grid container className={classes.cubesNpillar}>
@@ -116,10 +115,10 @@ export default function Hero() {
         sx={{
           px: { xs: 1, md: 12 },
           position: "relative",
-          top: { xs: "-42%", md: "-35%" },
+          top: { xs: "-42%", md: "-37%" },
         }}
       >
-        <Footer />
+        <Footer isHero />
       </Grid>
     </RootStyle>
   );

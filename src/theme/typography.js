@@ -35,13 +35,13 @@ const typography = {
     fontWeight: 650,
     lineHeight: 64 / 70,
     fontSize: pxToRem(34),
-    ...responsiveFontSizes({ sm: 40, md: 44, lg: 48 }),
+    ...responsiveFontSizes({ sm: 34, md: 44, lg: 48 }),
   },
   h3: {
     fontWeight: 700,
     lineHeight: 1.5,
     fontSize: pxToRem(24),
-    ...responsiveFontSizes({ sm: 26, md: 30, lg: 32 }),
+    ...responsiveFontSizes({ sm: 26, md: 30, lg: 38 }),
   },
   h4: {
     fontWeight: 700,
@@ -81,8 +81,9 @@ const typography = {
     fontSize: pxToRem(14),
   },
   caption: {
-    lineHeight: 1.1,
+    lineHeight: 1.2,
     fontSize: pxToRem(14),
+    ...responsiveFontSizes({ sm: 12, md: 16, lg: 17 }),
   },
   overline: {
     fontWeight: 700,
