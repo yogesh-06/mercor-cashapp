@@ -7,6 +7,7 @@ import Graph2 from "../assets/images/investing-graph-2.png";
 import Graph3 from "../assets/images/investing-graph-3 1.png";
 import StockPhone from "../assets/images/investing-stocks.png";
 import BitcoinPhone from "../assets/images/investing-bitcoin.png";
+import BackgroundSpark from "../assets/images/Vector.png";
 
 import Footer from "../components/Footer";
 
@@ -20,7 +21,7 @@ export default function Investing() {
     >
       <Box
         component="img"
-        src="/static/Vector.png"
+        src={BackgroundSpark}
         width="100%"
         sx={{ position: "absolute", zIndex: 0 }}
       />

@@ -6,6 +6,7 @@ import IntroCube from "../assets/images/intro-cube 1.png";
 import IntroCubes from "../assets/images/intro-cubes 1.png";
 import IntroPillar from "../assets/images/intro-pillar 1.png";
 import IntroStairs from "../assets/images/intro-stairs 1.png";
+import BackgroundSpark from "../assets/images/Vector.png";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -58,7 +59,7 @@ export default function Hero() {
     <Grid backgroundColor="#000000" height="100vh">
       <Box
         component="img"
-        src="/static/Vector.png"
+        src={BackgroundSpark}
         className={classes.backgroundSpark}
       />
       <Navbar />
