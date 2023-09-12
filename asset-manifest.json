@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/mercor-cashapp/static/css/main.d3176a5e.css",
-    "main.js": "/mercor-cashapp/static/js/main.9eb2a9e4.js",
+    "main.js": "/mercor-cashapp/static/js/main.85ce9564.js",
     "static/js/787.bea691f6.chunk.js": "/mercor-cashapp/static/js/787.bea691f6.chunk.js",
     "static/media/boost-stairs-1.png": "/mercor-cashapp/static/media/boost-stairs-1.758a04c1d571ed5a2635.png",
     "static/media/boost-stairs-2.png": "/mercor-cashapp/static/media/boost-stairs-2.f375157d70870538a9e9.png",
     "static/media/Agrandir-GrandHeavy.otf": "/mercor-cashapp/static/media/Agrandir-GrandHeavy.543cbb93e2f4479f4c39.otf",
     "static/media/payments-phone 1.png": "/mercor-cashapp/static/media/payments-phone 1.82136c99c81c618fc951.png",
     "static/media/Agrandir-GrandLight.otf": "/mercor-cashapp/static/media/Agrandir-GrandLight.6dd1904501ff5df803ea.otf",
+    "static/media/Vector.png": "/mercor-cashapp/static/media/Vector.a2df136a43a984b06d21.png",
     "static/media/boost-phone.png": "/mercor-cashapp/static/media/boost-phone.5f24c18c0e3d5c723b33.png",
     "static/media/payments-column.png": "/mercor-cashapp/static/media/payments-column.5efc7142681609cbead2.png",
     "static/media/investing-graph-1.png": "/mercor-cashapp/static/media/investing-graph-1.30dd03df7d3c75eb6d3b.png",
@@ -38,11 +39,11 @@
     "index.html": "/mercor-cashapp/index.html",
     "static/media/payment-floor.svg": "/mercor-cashapp/static/media/payment-floor.6f80a9ea4eacefcc4e74130b3012e0b9.svg",
     "main.d3176a5e.css.map": "/mercor-cashapp/static/css/main.d3176a5e.css.map",
-    "main.9eb2a9e4.js.map": "/mercor-cashapp/static/js/main.9eb2a9e4.js.map",
+    "main.85ce9564.js.map": "/mercor-cashapp/static/js/main.85ce9564.js.map",
     "787.bea691f6.chunk.js.map": "/mercor-cashapp/static/js/787.bea691f6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3176a5e.css",
-    "static/js/main.9eb2a9e4.js"
+    "static/js/main.85ce9564.js"
   ]
 }
