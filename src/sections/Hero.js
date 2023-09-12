@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography, styled } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
 import Phone from "../assets/images/intro-phone.png";
@@ -9,7 +9,6 @@ import IntroStairs from "../assets/images/intro-stairs 1.png";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { RootStyle } from "../components/RootStyle";
 
 const useStyles = makeStyles((theme) => ({
   introPhone: {
@@ -56,7 +55,7 @@ export default function Hero() {
   const classes = useStyles();
 
   return (
-    <RootStyle color="#000000">
+    <Grid backgroundColor="#000000" height="100vh">
       <Box
         component="img"
         src="/static/Vector.png"
@@ -120,6 +119,6 @@ export default function Hero() {
       >
         <Footer isHero />
       </Grid>
-    </RootStyle>
+    </Grid>
   );
 }

@@ -1,7 +1,7 @@
+import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import {
   Box,
-  Container,
   Drawer,
   Grid,
   Typography,
@@ -9,10 +9,10 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import { makeStyles, useTheme } from "@mui/styles";
-import React, { useState } from "react";
+
 import EyeButton from "../assets/images/eye-button.png";
-import Logo from "../assets/images/logo.png";
 import { makeCapitalise } from "../utils/utils";
+import Logo from "../assets/images/logo.png";
 
 const navItems = [
   { title: "Sign In", route: "" },
@@ -35,20 +35,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    // position: "relative",
-    // top: 0,
-    // left: 0,
-    // right: 0,
     [theme.breakpoints.down("md")]: {
       paddingLeft: theme.spacing(2),
       paddingRight: theme.spacing(2),
     },
-  },
-  backgroundSpark: {
-    width: "100%",
-    height: "100%",
-    position: "absolute",
-    // objectFit: "contain",
   },
 }));
 
@@ -98,7 +88,6 @@ export default function Navbar() {
 }
 
 export const CustomDrawer = ({ openNavbar, onCloseNavbar }) => {
-  const classes = useStyles();
   return (
     <Drawer
       anchor="top"
@@ -118,7 +107,7 @@ export const CustomDrawer = ({ openNavbar, onCloseNavbar }) => {
           justifyContent: "space-between",
         }}
       >
-        <Box component="img" src={Logo}></Box>
+        <Box component="img" src={Logo} />
         <NavIcon icon="fa:navicon" onClick={onCloseNavbar} />
       </Grid>
       <Grid
